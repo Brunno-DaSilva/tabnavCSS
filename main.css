@@ -371,7 +371,7 @@ body
   width: 98%;
   min-height: 400px;
   margin: 0 auto;
-  border: 1px solid #15ff00;
+  /* border: 1px solid #15ff00; */
   background-color: var(--OffWhite);
   color: var(--dark-blue) !important;
 }
@@ -400,6 +400,18 @@ body
   padding: 0.4rem;
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid transparent;
+  /* border: 1px solid #15ff00; */
+}
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  #nav-tab
+  a {
+  color: #94989b !important;
 }
 
 body
@@ -413,22 +425,12 @@ body
   .active
   a {
   transition: all 0.3s ease-in-out;
-  color: var(--dark-blue);
-  border-bottom: 3px solid #ffe600;
+  color: var(--dark-blue) !important;
+  border-bottom: 3px solid var(--yellow);
   font-size: 1.1rem;
+  /* border: 1px solid #eeff00; */
 }
 
-/* body
-  header
-  .navigation
-  .nav
-  .schools:hover
-  .school__column
-  .schooltab__container
-  #nav-tab {
-  min-width: 90%;
-  border: 1px solid blue;
-} */
 body
   header
   .navigation
@@ -477,12 +479,41 @@ body
   .schools:hover
   .school__column
   .schooltab__container
-  .middle__container {
+  .middle__container,
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .high__container,
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .program_centers__container {
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* border: 1px solid #ff00ff; */
 }
+
+/* body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .program_centers {
+  flex-direction: row;
+  justify-content: space-between;
+} */
 
 /********** TODO: *************
   [ ] Add high, middle,
@@ -514,7 +545,25 @@ body
   .school__column
   .schooltab__container
   .middle__container
-  .schools__middle_item {
+  .schools__middle_item,
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .high__container
+  .schools__high_item,
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .program_centers__container
+  .schools__program_centers_item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
