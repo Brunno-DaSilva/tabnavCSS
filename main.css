@@ -435,6 +435,18 @@ body
   display: block;
 }
 
+/********** TODO: *************
+  [ ] Add high, middle,
+  and program centers following 
+  from body to the container name  
+  "body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container + .elementary__container"
+**********************************/
 body
   header
   .navigation
@@ -449,6 +461,19 @@ body
   flex-wrap: wrap;
 }
 
+/********** TODO: *************
+  [ ] Add high, middle,
+  and program centers following 
+  from body to the container name  
+  "body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container + .elementary__container
+  .schools__elementary_item "
+**********************************/
 body
   header
   .navigation
@@ -464,6 +489,20 @@ body
   min-height: 300px;
   padding: 0.5rem;
   margin: 0.3rem;
+  text-decoration: none;
+}
+
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .elementary__container
+  .schools__elementary_item
+  a {
+  text-decoration: none !important;
 }
 
 body header .navigation .nav .employment {
@@ -660,4 +699,5 @@ body .nav_dark_text {
   font-weight: bolder;
   letter-spacing: 1px;
 }
+
 /*# sourceMappingURL=main.css.map */
