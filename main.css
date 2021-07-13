@@ -368,8 +368,9 @@ body
   .schools:hover
   .school__column
   .schooltab__container {
+  width: 98%;
   margin: 0 auto;
-  border: 1px solid red;
+  border: 1px solid rgb(21, 255, 0);
   background-color: var(--OffWhite);
   color: var(--dark-blue) !important;
 }
@@ -414,6 +415,18 @@ body
   color: var(--dark-blue);
   border-bottom: 3px solid #ffe600;
 }
+
+/* body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  #nav-tab {
+  min-width: 90%;
+  border: 1px solid blue;
+} */
 body
   header
   .navigation
@@ -454,7 +467,15 @@ body
   .schools:hover
   .school__column
   .schooltab__container
-  .elementary__container {
+  .elementary__container,
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .middle__container {
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -482,7 +503,16 @@ body
   .school__column
   .schooltab__container
   .elementary__container
-  .schools__elementary_item {
+  .schools__elementary_item,
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .middle__container
+  .schools__middle_item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
