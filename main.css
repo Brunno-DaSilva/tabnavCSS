@@ -369,8 +369,9 @@ body
   .school__column
   .schooltab__container {
   width: 98%;
+  min-height: 400px;
   margin: 0 auto;
-  border: 1px solid rgb(21, 255, 0);
+  border: 1px solid #15ff00;
   background-color: var(--OffWhite);
   color: var(--dark-blue) !important;
 }
@@ -396,7 +397,7 @@ body
   a {
   text-decoration: none;
   color: var(--dark-blue) !important;
-  padding: 10px;
+  padding: 0.4rem;
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid transparent;
 }
@@ -414,6 +415,7 @@ body
   transition: all 0.3s ease-in-out;
   color: var(--dark-blue);
   border-bottom: 3px solid #ffe600;
+  font-size: 1.1rem;
 }
 
 /* body
@@ -532,6 +534,7 @@ body
   .elementary__container
   .schools__elementary_item
   a {
+  margin-bottom: 1rem;
   text-decoration: none !important;
 }
 
@@ -724,8 +727,7 @@ body .nav_white_text {
 body .nav_dark_text {
   color: var(--dark-blue);
   text-decoration: none !important;
-  text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 1px;
 }
