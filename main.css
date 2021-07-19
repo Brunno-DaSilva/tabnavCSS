@@ -453,7 +453,7 @@ body
 }
 
 /********** TODO: *************
-  [ ] Add high, middle,
+  [ X ] Add high, middle,
   and program centers following 
   from body to the container name  
   "body
@@ -516,7 +516,7 @@ body
 } */
 
 /********** TODO: *************
-  [ ] Add high, middle,
+  [ X ] Add high, middle,
   and program centers following 
   from body to the container name  
   "body
@@ -714,6 +714,56 @@ body header .navigation .icons {
   -ms-flex-align: end;
   align-items: flex-end;
   color: var(--yellow);
+  position: relative;
+}
+
+/**************
+* Icon Search
+**************/
+
+body header .navigation .icons .icons__search {
+  display: flex;
+}
+
+body header .navigation .icons .icons__search .trigger_search {
+  background: var(--yellow);
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+}
+body header .navigation .icons .icons__search .trigger_search:hover {
+  color: var(--dark-blue);
+}
+
+body header .navigation .icons .icons__search .input {
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  transition: 0.25s ease-in-out all;
+  width: 0;
+  padding: 0;
+  margin-right: -25px;
+  height: 40px;
+}
+
+body header .navigation .icons .input-open {
+  width: 70vw !important;
+  padding: 0 50px !important;
+  margin-right: 10px !important;
+  color: #1e5583;
+  font-size: 1rem;
+}
+
+body header .navigation .icons .input-open::placeholder {
+  color: rgb(133, 132, 132);
+  font-size: 1rem;
 }
 
 body header .navigation .icons .icons__search a {
@@ -722,10 +772,23 @@ body header .navigation .icons .icons__search a {
   font-size: 1.2rem;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+  background: var(--light-blue);
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 3px;
 }
 
 body header .navigation .icons .icons__search a:hover {
-  color: var(--yellow);
+  color: var(--dark-blue);
 }
 
 body .animation__underline {
