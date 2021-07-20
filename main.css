@@ -1,5 +1,16 @@
+/******************************************************
+TODOs
+
+[ ] Make School items display the yellow underline on hover
+[ ] Responsible Design
+[ ] Add icon images
+[ ] Make search form work properly
+
+******************************************************/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 :root {
   --dark-blue: #184366;
   --light-green: #0e987d;
@@ -371,7 +382,6 @@ body
   width: 98%;
   min-height: 400px;
   margin: 0 auto;
-  /* border: 1px solid #15ff00; */
   background-color: var(--OffWhite);
   color: var(--dark-blue) !important;
 }
@@ -402,6 +412,19 @@ body
   border-bottom: 1px solid transparent;
   /* border: 1px solid #15ff00; */
 }
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  #nav-tab
+  p {
+  border: 1px solid red;
+  margin-left: 2rem !important;
+}
+
 body
   header
   .navigation
@@ -496,11 +519,12 @@ body
   .school__column
   .schooltab__container
   .program_centers__container {
+  /* border: 1px solid #ff00ff; */
+
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* border: 1px solid #ff00ff; */
 }
 
 /* body
@@ -564,6 +588,7 @@ body
   .schooltab__container
   .program_centers__container
   .schools__program_centers_item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
