@@ -449,6 +449,7 @@ body
   a {
   transition: all 0.3s ease-in-out;
   color: var(--dark-blue) !important;
+  font-weight: 600;
   border-bottom: 3px solid var(--yellow);
 }
 
