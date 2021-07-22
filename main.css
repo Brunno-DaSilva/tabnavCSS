@@ -604,6 +604,30 @@ body
   .schools:hover
   .school__column
   .schooltab__container
+  .high__container
+  .schools__high_item {
+  justify-content: flex-start;
+}
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
+  .high__container
+  .schools__high_item
+  p {
+  padding: 0.5rem 0;
+}
+
+body
+  header
+  .navigation
+  .nav
+  .schools:hover
+  .school__column
+  .schooltab__container
   .elementary__container
   .schools__elementary_item
   a {
