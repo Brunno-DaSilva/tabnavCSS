@@ -434,6 +434,7 @@ body
   #nav-tab
   a {
   color: #5b5f66 !important;
+  font-size: 1.3rem;
 }
 
 body
@@ -449,8 +450,6 @@ body
   transition: all 0.3s ease-in-out;
   color: var(--dark-blue) !important;
   border-bottom: 3px solid var(--yellow);
-  font-size: 1.1rem;
-  /* border: 1px solid #eeff00; */
 }
 
 body
