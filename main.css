@@ -774,7 +774,7 @@ body header .navigation .icons .icons__search {
 }
 
 body header .navigation .icons .icons__search .trigger_search {
-  background: var(--yellow);
+  background: transparent;
   border: 0;
   border-radius: 50%;
   width: 40px;
@@ -787,7 +787,7 @@ body header .navigation .icons .icons__search .trigger_search {
   cursor: pointer;
 }
 body header .navigation .icons .icons__search .trigger_search:hover {
-  color: var(--dark-blue);
+  color: var(--yellow);
 }
 
 body header .navigation .icons .icons__search .input {
@@ -810,7 +810,7 @@ body header .navigation .icons .input-open {
 }
 
 body header .navigation .icons .input-open::placeholder {
-  color: rgb(133, 132, 132);
+  color: #858484;
   font-size: 1rem;
 }
 
@@ -820,7 +820,7 @@ body header .navigation .icons .icons__search a {
   font-size: 1.2rem;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
-  background: var(--light-blue);
+  /* background: var(--light-blue); */
   border: 0;
   border-radius: 50%;
   width: 40px;
@@ -836,7 +836,7 @@ body header .navigation .icons .icons__search a {
 }
 
 body header .navigation .icons .icons__search a:hover {
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 body .animation__underline {
