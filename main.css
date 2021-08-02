@@ -941,7 +941,6 @@ body .md-screen,
 body .sm-screen {
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
 
 @media (max-width: 1614px) {
   body {
@@ -955,7 +954,6 @@ body .sm-screen {
 
   body header .navigation .logo {
     width: 230px;
-    border: 1px solid red;
   }
 
   body header .navigation .nav {
@@ -976,8 +974,7 @@ body .sm-screen {
   }
 
   body header .navigation .logo {
-    width: 200px;
-    border: 1px solid red;
+    width: 150px;
   }
   body header .navigation .nav {
     margin-left: -4rem;
@@ -1004,6 +1001,11 @@ body .sm-screen {
   body .icons .icons__search a i {
     font-size: 1rem;
   }
+
+  body header .navigation .nav .employment:hover .employment__column {
+    left: -35rem;
+    width: 60rem;
+  }
 }
 
 @media (max-width: 1252px) {
@@ -1015,9 +1017,24 @@ body .sm-screen {
   }
 
   body header .navigation .logo {
-    width: 200px;
+    width: 80px;
   }
   body header .navigation .icons .input-open {
     width: 62vw !important;
+  }
+
+  body .arrow-up__employment {
+    left: 64.5%;
+    top: -7.5%;
+  }
+
+  body .md-screen {
+    display: none;
+  }
+  body .lg-screen {
+    display: none;
+  }
+  body .sm-screen {
+    display: block;
   }
 }
