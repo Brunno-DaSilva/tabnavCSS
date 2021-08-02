@@ -1,7 +1,7 @@
 /******************************************************
 TODOs
 
-[ ] Make School items display the yellow underline on hover
+[ x ] Make School items display the yellow underline on hover
 [ ] Responsible Design
 [ ] Add icon images
 [ ] Make search form work properly
@@ -91,22 +91,20 @@ body header .navigation {
   width: 75%;
   background: var(--dark-blue);
   padding: 1.1rem 0.5rem;
-  /*================================
-                    ICONS
-        ================================*/
+  /* border: 1px solid rgb(65, 255, 106); */
 }
 
 body header .navigation .logo {
-  width: 260px;
+  width: 230px;
 }
 
 body header .navigation .logo img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 body header .navigation .nav {
-  width: 60%;
+  width: 55%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +115,7 @@ body header .navigation .nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
   /*================================
           ABOUT Columns       
         ================================*/
@@ -518,8 +517,6 @@ body
   .school__column
   .schooltab__container
   .program_centers__container {
-  /* border: 1px solid #ff00ff; */
-
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -751,7 +748,7 @@ body header .navigation .nav .employment:hover .employment__column a {
 }
 
 body header .navigation .icons {
-  width: 25%;
+  width: 18%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,6 +760,7 @@ body header .navigation .icons {
   align-items: flex-end;
   color: var(--yellow);
   position: relative;
+  /* border: 1px solid purple; */
 }
 
 /**************
@@ -771,20 +769,27 @@ body header .navigation .icons {
 
 body header .navigation .icons .icons__search {
   display: flex;
+  padding: 0 !important;
+  /* border: 1px solid blueviolet; */
+}
+body header .navigation .icons .icons__search a {
+  padding: 0;
+}
+body header .navigation .icons .icons__search a i {
+  padding: 0;
 }
 
 body header .navigation .icons .icons__search .trigger_search {
   background: transparent;
   border: 0;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  /* border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   outline: 0;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 body header .navigation .icons .icons__search .trigger_search:hover {
   color: var(--yellow);
@@ -802,7 +807,7 @@ body header .navigation .icons .icons__search .input {
 }
 
 body header .navigation .icons .input-open {
-  width: 70vw !important;
+  width: 53vw !important;
   padding: 0 50px !important;
   margin-right: 10px !important;
   color: #1e5583;
@@ -900,7 +905,7 @@ body .arrow-up__employment {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 15px solid #ffffff;
+  border-bottom: 15px solid var(--OffWhite);
   position: absolute;
   left: 54%;
   top: -2%;
@@ -919,6 +924,7 @@ body .arrow-up__employment {
   top: -7.5%;
 }
 
+
 /*******************************************************
 
 =====================================
@@ -932,81 +938,67 @@ body .arrow-up__employment {
 =====================================
 */
 
-@media (max-width: 1605px) {
+body .md-screen,
+body .sm-screen {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
+
+@media (max-width: 1614px) {
   body {
-    background: #6ee1f8;
+    background-color: #98960e;
+  }
+
+  body header .navigation {
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  body header .navigation .logo {
+    width: 230px;
+    border: 1px solid red;
+  }
+  body header .navigation .nav {
+    /* border: 1px solid burlywood; */
+    margin-left: -4rem;
   }
 }
 
-/*
-=======================================
-==>        Max-Width: 1305px
-=========================================
-*/
-
-@media (max-width: 1405px) {
+@media (max-width: 1357px) {
   body {
-    background: #f87070;
+    background-color: #0e987d;
+  }
+  body header .navigation {
+    justify-content: space-between;
+  }
+
+  body header .navigation .logo {
+    width: 200px;
+    border: 1px solid red;
+  }
+  body header .navigation .nav {
+    /* border: 1px solid burlywood; */
+    margin-left: -2rem;
+  }
+
+  body .lg-screen {
+    display: none;
+  }
+  body .md-screen {
+    display: block;
   }
 }
-
-/*
-=======================================
-==>        Max-Width: 1100px
-=========================================
-*/
-@media (max-width: 1110px) {
+@media (max-width: 1298px) {
   body {
-    background: #858484;
+    background-color: #0e987d;
+  }
+  body header .navigation {
+    justify-content: space-between;
+  }
+
+  body header .navigation .logo {
+    width: 200px;
+    border: 1px solid red;
   }
 }
-
-/*
-=======================================
-==>        Max-Width: 950px
-=========================================
-*/
-
-@media (max-width: 950px) {
-  body {
-    background: #0e987d;
-  }
-}
-
-/*
-=======================================
-==>        Max-Width: 750px
-=========================================
-*/
-
-@media (max-width: 750px) {
-  body {
-    background: #184366;
-  }
-}
-
-/*
-=======================================
-==>        Max-Width: 550px
-=========================================
-*/
-
-@media (max-width: 550px) {
-  body {
-    background: #e8b20f;
-  }
-}
-
-/*
-=======================================
-==>        Max-Width: 490px
-=========================================
-*/
-
-@media (max-width: 490px) {
-  body {
-    background: #e95b37;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+>>>>>>> 063fe7bd5595cb3a9f23993ad02bac5ed09a8326
