@@ -1017,7 +1017,7 @@ body .sm-screen {
   }
 
   body header .navigation .logo {
-    width: 80px;
+    width: 150px;
   }
   body header .navigation .icons .input-open {
     width: 62vw !important;
@@ -1027,7 +1027,9 @@ body .sm-screen {
     left: 64.5%;
     top: -7.5%;
   }
+}
 
+@media (max-width: 1102px) {
   body .md-screen {
     display: none;
   }
