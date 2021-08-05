@@ -33,3 +33,28 @@ trigger_search.addEventListener("click", () => {
     trigger_search.innerHTML = "<i class='fas fa-search'>  </i>";
   }
 });
+
+const news = document.getElementById("news");
+let display_hide_El = document.getElementById("display__onClick");
+const lastEl = document.getElementById("lastEl");
+
+news.addEventListener("click", showNavItems);
+
+function showNavItems() {
+  if (display_hide_El.style.display === "none") {
+    display_hide_El.style.display = "flex";
+    display_hide_El.style.flexDirection = "column";
+    display_hide_El.style.minWidth = "20rem";
+    display_hide_El.style.padding = "0.5rem";
+    display_hide_El.style.boxShadow = `0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)`;
+  } else {
+    display_hide_El.style.display = "none";
+  }
+}
+
+function focusOut() {
+  display_hide_El.style.display = "none";
+  console.log("Focus out");
+}
+
+lastEl.addEventListener("focusout", focusOut);
