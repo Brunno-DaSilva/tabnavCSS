@@ -34,6 +34,8 @@ trigger_search.addEventListener("click", () => {
   }
 });
 
+//On click event to help keyboard only users
+
 const news = document.getElementById("news");
 let display_hide_El = document.getElementById("display__onClick");
 const lastEl = document.getElementById("lastEl");
