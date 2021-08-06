@@ -34,29 +34,58 @@ trigger_search.addEventListener("click", () => {
   }
 });
 
-//On click event to help keyboard only users
+/******************
+ *
+ * On click event to help keyboard only users
+ *
+ * ****************/
 
 const news = document.getElementById("news");
-let display_hide_El = document.getElementById("display__onClick");
-const lastEl = document.getElementById("lastEl");
+const about = document.getElementById("about");
+// const school = document.getElementById("school");
+// const employment = document.getElementById("employment");
 
-news.addEventListener("click", showNavItems);
+let display_hide_El_news = document.getElementById("display__onClick_news");
+let display_hide_El_about = document.getElementById("display__onClick_about");
+// let display_hide_El_school = document.getElementById("display__onClick_school");
+// let display_hide_El_employment = document.getElementById(
+//   "display__onClick_employment"
+// );
 
-function showNavItems() {
-  if (display_hide_El.style.display === "none") {
-    display_hide_El.style.display = "flex";
-    display_hide_El.style.flexDirection = "column";
-    display_hide_El.style.minWidth = "20rem";
-    display_hide_El.style.padding = "0.5rem";
-    display_hide_El.style.boxShadow = `0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)`;
+const lastEl_news = document.getElementById("lastEl_news");
+const lastEl_about = document.getElementById("lastEl_about");
+// const lastEl = document.getElementById("lastEl_news");
+// const lastEl = do  cument.getElementById("lastEl_news");
+
+news.addEventListener("click", () => {
+  showNavItems(display_hide_El_news);
+});
+about.addEventListener("click", () => {
+  showNavItems(display_hide_El_about);
+});
+
+function showNavItems(x) {
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+    x.style.flexDirection = "column";
+    x.style.minWidth = "20rem";
+    x.style.padding = "0.5rem";
+    x.style.boxShadow = `0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)`;
   } else {
-    display_hide_El.style.display = "none";
+    x.style.display = "none";
   }
 }
 
-function focusOut() {
-  display_hide_El.style.display = "none";
+// Last element gets a focus out event
+function focusOut(x) {
+  x.style.display = "none";
   console.log("Focus out");
 }
 
-lastEl.addEventListener("focusout", focusOut);
+lastEl_news.addEventListener("focusout", () => {
+  focusOut(display_hide_El_news);
+});
+
+lastEl_about.addEventListener("focusout", () => {
+  focusOut(display_hide_El_about);
+});

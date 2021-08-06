@@ -904,8 +904,8 @@ body .nav_white_text {
   text-decoration: none !important;
   text-transform: uppercase;
   font-size: 1.1rem;
-  font-weight: bold;
   letter-spacing: 2px;
+  background-color: transparent;
 }
 
 body .nav_dark_text {
@@ -961,7 +961,7 @@ body .sm-screen {
   display: none;
 }
 
-@media (max-width: 1614px) {
+@media (max-width: 1914px) {
   body {
     background-color: #98960e;
   }
