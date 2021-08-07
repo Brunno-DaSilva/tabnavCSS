@@ -61,10 +61,22 @@ news.addEventListener("click", () => {
   showNavItems(display_hide_El_news);
 });
 about.addEventListener("click", () => {
-  showNavItems(display_hide_El_about);
+  showNavItems_about(display_hide_El_about);
 });
 
 function showNavItems(x) {
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+    x.style.flexDirection = "column";
+    x.style.minWidth = "20rem";
+    x.style.padding = "0.5rem";
+    x.style.boxShadow = `0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)`;
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function showNavItems_about(x) {
   if (x.style.display === "none") {
     x.style.display = "flex";
     x.style.flexDirection = "column";
