@@ -1058,6 +1058,7 @@ body .sm-screen {
   }
   body header .navigation {
     width: 95% !important;
+    justify-content: space-between;
   }
   body header .navigation .logo {
     min-width: 80px;
@@ -1074,10 +1075,16 @@ body .sm-screen {
     display: block;
   }
   body header .navigation .nav {
-    margin-left: 4rem;
+    margin-left: -1rem !important;
+    border: 1px solid red;
   }
   body header .navigation .icons .input-open {
-    width: 73vw !important;
+    width: 91vw !important;
+  }
+
+  .icons {
+    width: 40px !important;
+    border: 1px solid red;
   }
   .sm_hide {
     display: none !important;
@@ -1091,6 +1098,7 @@ body .sm-screen {
 
   .nav,
   .icons {
+    width: 0 !important;
     display: none !important;
   }
 
