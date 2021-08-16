@@ -1056,8 +1056,13 @@ body .sm-screen {
   body {
     background-color: #2e54ff;
   }
+  body header .navigation {
+    width: 95% !important;
+  }
   body header .navigation .logo {
-    width: 70px;
+    min-width: 80px;
+    max-width: 80px;
+    border: 1px solid red;
   }
   body .md-screen {
     display: none;
@@ -1068,9 +1073,18 @@ body .sm-screen {
   body .sm-screen {
     display: block;
   }
+  body header .navigation .nav {
+    margin-left: 4rem;
+  }
+  body header .navigation .icons .input-open {
+    width: 73vw !important;
+  }
+  .sm_hide {
+    display: none !important;
+  }
 }
 
-@media (max-width: 1096px) {
+@media (max-width: 900px) {
   body {
     background-color: #ab2eff;
   }
@@ -1087,7 +1101,8 @@ body .sm-screen {
     display: none;
   }
   body header .navigation .logo {
-    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
   }
 
   .hamburger {
