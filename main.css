@@ -91,7 +91,7 @@ body header .navigation {
   width: 75%;
   background: var(--dark-blue);
   padding: 1.1rem 0.5rem;
-  /* border: 1px solid rgb(65, 255, 106); */
+  border: 1px solid rgb(65, 255, 106);
 }
 
 body header .navigation .logo {
@@ -104,7 +104,6 @@ body header .navigation .logo img {
 }
 
 body header .navigation .nav {
-  width: 55%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,16 +114,7 @@ body header .navigation .nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
-  /*================================
-          ABOUT Columns       
-        ================================*/
-  /*================================
-            School  Columns       
-        ================================*/
-  /*================================
-            EMPLOYMENT  Columns       
-        ================================*/
+  border: 1px solid red;
 }
 
 body header .navigation .nav .nav__primary-item {
@@ -984,16 +974,16 @@ body .sm-screen {
   }
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1418px) {
   body {
-    background-color: #0e987d;
+    background-color: #980e0e;
   }
   body header .navigation {
     justify-content: space-between;
   }
 
   body header .navigation .logo {
-    width: 150px;
+    width: 120px;
   }
   body header .navigation .nav {
     margin-left: -4rem;
@@ -1027,17 +1017,16 @@ body .sm-screen {
   }
 }
 
-@media (max-width: 1252px) {
+@media (max-width: 1284px) {
   body {
     background-color: #5f837c;
   }
+
   body header .navigation {
     justify-content: space-between;
+    width: 90% !important;
   }
 
-  body header .navigation .logo {
-    width: 150px;
-  }
   body header .navigation .icons .input-open {
     width: 62vw !important;
   }
