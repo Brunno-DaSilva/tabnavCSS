@@ -54,7 +54,7 @@ let display_hide_El_about = document.getElementById("display__onClick_about");
 
 const lastEl_news = document.getElementById("lastEl_news");
 const lastEl_about = document.getElementById("lastEl_about");
-// const lastEl = document.getElementById("lastEl_news");
+const lastEl = document.getElementById("lastEl_news");
 // const lastEl = do  cument.getElementById("lastEl_news");
 
 news.addEventListener("click", () => {
