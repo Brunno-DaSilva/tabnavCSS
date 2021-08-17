@@ -418,7 +418,6 @@ body
   padding: 0.4rem;
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid transparent;
-  /* border: 1px solid #15ff00; */
 }
 body
   header
@@ -769,7 +768,6 @@ body header .navigation .icons {
   align-items: flex-end;
   color: var(--yellow);
   position: relative;
-  /* border: 1px solid purple; */
 }
 
 /**************
@@ -779,7 +777,6 @@ body header .navigation .icons {
 body header .navigation .icons .icons__search {
   display: flex;
   padding: 0 !important;
-  /* border: 1px solid blueviolet; */
 }
 body header .navigation .icons .icons__search a {
   padding: 0;
@@ -791,7 +788,6 @@ body header .navigation .icons .icons__search a i {
 body header .navigation .icons .icons__search .trigger_search {
   background: transparent;
   border: 0;
-  /* border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -834,7 +830,6 @@ body header .navigation .icons .icons__search a {
   font-size: 1.2rem;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
-  /* background: var(--light-blue); */
   border: 0;
   border-radius: 50%;
   width: 40px;
