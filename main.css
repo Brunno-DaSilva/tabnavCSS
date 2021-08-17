@@ -114,7 +114,6 @@ body header .navigation .nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 body header .navigation .nav .nav__primary-item {
@@ -196,9 +195,6 @@ body header .navigation .nav .about .about__column {
   display: none;
   -webkit-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
-  /*======================
-                  Buttons       
-            =======================*/
 }
 
 body header .navigation .nav .about .about__column .button {
